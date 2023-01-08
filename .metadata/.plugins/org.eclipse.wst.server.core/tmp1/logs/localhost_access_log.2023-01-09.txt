@@ -23,3 +23,5 @@
 0:0:0:0:0:0:0:1 - - [09/Jan/2023:01:34:49 +0900] "GET /CODE_GRAPHY/html/search.jsp?search=&submit= HTTP/1.1" 200 296
 0:0:0:0:0:0:0:1 - - [09/Jan/2023:01:34:49 +0900] "GET /favicon.ico HTTP/1.1" 404 818
 0:0:0:0:0:0:0:1 - - [09/Jan/2023:01:34:52 +0900] "GET /CODE_GRAPHY/html/search.jsp?search=sss&submit= HTTP/1.1" 200 296
+127.0.0.1 - - [09/Jan/2023:02:15:56 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [09/Jan/2023:02:16:06 +0900] "GET /CODE_GRAPHY/html/index.jsp HTTP/1.1" 200 57507

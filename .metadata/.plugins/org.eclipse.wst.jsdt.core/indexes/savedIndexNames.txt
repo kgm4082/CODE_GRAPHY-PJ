@@ -1,9 +1,7 @@
 INDEX VERSION 1.4+D:\Programming\Github\CODE_GRAPHY-PJ\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2067911248.index
-4292085881.index
 3520117238.index
 1114266277.index
-2767919597.index
 1484680149.index
 4133477320.index
 2460082677.index
