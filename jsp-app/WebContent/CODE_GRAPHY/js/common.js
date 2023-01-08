@@ -45,7 +45,7 @@ $(() => {
     let scTop;
     // 마지막 스크룰위치값
     let lastSc = 0;
-
+    
     //////// 스크롤 이벤트 함수 /////////////
     $(window).scroll(() => {
         // 현재 스크롤값 scTop에 저장
@@ -101,7 +101,7 @@ $(() => {
 
     /* SHOP 클릭하면 하위 나옴 */
     $(".mgnb span:contains('SHOP')").click(() => {
-         $(".mgnb li:nth-child(1) .mlnb").slideToggle(250);
+        $(".mgnb li:nth-child(1) .mlnb").slideToggle(250);
     });
     /* COMMUNITY 클릭하면 하위 나옴 */
     $(".mgnb span:contains('COMMUNITY')").click(() => {
@@ -111,4 +111,5 @@ $(() => {
     $(".mgnb span:contains('MY')").click(() => {
          $(".mgnb li:nth-child(5) .mlnb").slideToggle(250);
     });
+
 }); //////////////////// jQB ////////////////////

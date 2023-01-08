@@ -7,7 +7,7 @@
 		<div class="info1">
 			<div class="info_nav">
 				<ul>
-					<li><a href="">이용약관</a></li>
+					<li><a href="/CODE_GRAPHY/html/agreement.jsp">이용약관</a></li>
 					<li><a href="">개인정보처리방침</a></li>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">1:1문의</a></li>
@@ -36,7 +36,7 @@
 		<div class="info1">
 			<div class="info_nav">
 				<ul>
-					<li><a href="">이용약관</a></li>
+					<li><a href="/CODE_GRAPHY/html/agreement.jsp">이용약관</a></li>
 					<li><a href="">개인정보처리방침</a></li>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">1:1문의</a></li>

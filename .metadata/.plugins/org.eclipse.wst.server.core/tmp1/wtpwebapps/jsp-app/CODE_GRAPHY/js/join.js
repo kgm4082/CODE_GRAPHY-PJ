@@ -180,15 +180,17 @@ $(() => {
     else if (cid === "email") {
       if (!vReg(cv, cid)) {
         // 메시지 띄우기
-        $(this).siblings(".error").text("유효한 이메일을 입력해 주세요.");
-
+        $(this).siblings(".error").text("유효한 이메일을 입력해 주세요.")
+        .removeClass("on"); //빨간글자
+        
         // 불통과!
         pass = false;
       } ///////// if : 불통과시 //////////
       else {
         // 검사결과가 통과시 /////
         // 메시지 지우기
-        $(this).siblings(".error").empty();
+        $(this).siblings(".error").text("사용 가능한 이메일입니다.")
+        .addClass("on"); //회색녹색
       } ////////// else : 통과시 ///////////
     } //////////// else if : 이메일검사 /////////////
   });

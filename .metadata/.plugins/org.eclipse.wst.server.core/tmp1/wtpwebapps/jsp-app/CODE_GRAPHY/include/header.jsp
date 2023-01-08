@@ -28,7 +28,7 @@
 			</div>
 			<!-- 1-1-1. 로고 -->
 			<div class="logo">
-				<a href="index.jsp"> <img src="../images/common/main_logo.png"
+				<a href="/CODE_GRAPHY/html/index.jsp"> <img src="../images/common/main_logo.png"
 					alt="메인로고" />
 				</a>
 			</div>
@@ -52,7 +52,7 @@
 					<!-- 룩북 -->
 					<li><a href=""><span>LOOKBOOK</span></a></li>
 					<!-- 매장찾기 -->
-					<li><a href="aboutus.jsp"><span>ABOUT US</span></a></li>
+					<li><a href="/CODE_GRAPHY/html/aboutus.jsp"><span>ABOUT US</span></a></li>
 					<!-- 커뮤니티 -->
 					<li class=""><a href=""><span>COMMUNITY</span></a> <!-- Local Navigation Bar -->
 						<div class="LNB">
@@ -68,7 +68,7 @@
 		<!-- 1-1-3. TAB -->
 		<ul class="tab_box">
 			<!-- 로그인 -->
-			<li><a href="login.jsp"><span class="login_title">LOGIN</span></a></li>
+			<li><a href="/CODE_GRAPHY/html/login.jsp"><span class="login_title">LOGIN</span></a></li>
 			<!-- 관리자페이지 -->
 			<li class="admin_title pc_admin" style="height:80px; line-height:80px; cursor:pointer; display:none">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#af231c" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
@@ -137,7 +137,7 @@
 								</ul>
 							</div></li>
 						<li><a href="">LOOKBOOK</a></li>
-						<li><a href="aboutUS.jsp">ABOUT US</a></li>
+						<li><a href="/CODE_GRAPHY/html/login.jsp">ABOUT US</a></li>
 						<li><span>COMMUNITY</span>
 							<div class="mlnb" style="display: none;">
 								<ul>
@@ -161,8 +161,8 @@
 				<div class="mtab">
 					<ul>
 						<li class="admin_title mobile_admin" style="color:red; display:none; font-size: 1.4rem; line-height: 28px; color: #af231c;">관리자</li>
-						<li><a href="login.jsp" class="login_title">로그인</a></li>
-						<li><a href="join.jsp">회원가입</a></li>
+						<li><a href="/CODE_GRAPHY/html/login.jsp" class="login_title">로그인</a></li>
+						<li><a href="/CODE_GRAPHY/html/join.jsp">회원가입</a></li>
 						<li><a href="">장바구니</a></li>
 						<li><a href="">찜하기</a></li>
 					</ul>
@@ -174,7 +174,7 @@
 	<div class="sch_area">
 		<div class="sch_cover"></div>
 		<div class="sch_boxs">
-			<form action="search.jsp">
+			<form action="/CODE_GRAPHY/html/search.jsp">
 				<div class="sch_box">
 					<input id="search" name="search" type="text" maxlength="25"
 						style="outline: 0;"> <input id="sbtn" name="submit"

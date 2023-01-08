@@ -2,37 +2,28 @@
 	pageEncoding="UTF-8"%>
 <% 
 /////////////////////////////////////////////////////////////
-	// JSP 세션이 셋팅된 경우에 if문 중괄호 안이 표현됨
 	if (session.getAttribute("name") != null) {
-		// 중괄호열고 맨 아래 JSP코드블럭에 중괄호를 닫았음
-		// 이 방법은 중간에 html,css,js를 그대로 코딩해서
-		// 화면에 바로 출력 시키는 방법이다!(out.print로 출력시 복잡함!)
 /////////////////////////////////////////////////////////////
 %>
 <script>
   /*/////////////////////////////////////////////////
     함수명: loginSet
-    기능: JSP코드에서 세션변수로 셋팅된 값을 화면에 반영한다
+    기능: JSP코드에서 세션변수로 셋팅된 값을 화면에 반영함
   *//////////////////////////////////////////////////
-  function loginSet(auth){// msg-메시지, auto-권한
-      // JSP에서 이 함수를 호출할 예정!
-      // 따라서 내부의 실행코드는 html이 로딩된 후 실행해야함!
-      // 그래서 반드시 제이쿼리 실행구역으로 싸줘야함!!!
+  function loginSet(auth){// auto-권한
+
       $(function(){ /// jQB //////////////////
 
-          // 2. 로그인 버튼 텍스트 변경
+          // 로그인 버튼 텍스트 변경
           // 대상: .login_title / LOGIN -> LOGOUT
             $(".login_title")
             .text("LOGOUT")
 
-          // 3. 로그아웃 클릭시 로그아웃하기
+          // 로그아웃 클릭시 로그아웃하기
           .click(function(){
-              // 비동기통신으로 로그아웃 처리 페이지호출!
-              // Ajax - $.post() 로 처리!
-              // $.post(호출페이지, 전달변수셋팅, 콜백함수)
               $.post(
                 // 1. 호출페이지
-                  "../process/logout.jsp",
+                  "/CODE_GRAPHY/process/logout.jsp",
                   // 2. 전달변수셋팅
                   {},
                   // 3. 콜백함수
@@ -45,7 +36,7 @@
                           alert("로그아웃 되었습니다.");                          
 
                           // 첫페이지로 리로드
-                          location.replace("index.jsp");
+                          location.replace("/CODE_GRAPHY/html/index.jsp");
                           
                       } ////// if ////////////////
                       else{
@@ -64,9 +55,8 @@
         // 5. auth 권한 값이 "A"일 경우 
         // 관리자 페이지 아이콘 나타내기
         if (auth === "A" || auth === "S") {
-            $(".admin_title")
             $(".admin_title").show()
-            .click(()=>location.href="admin/list.jsp");
+            .click(()=>location.href="/CODE_GRAPHY/admin/list.jsp");
                 
         } /////////// if /////////////////
 
